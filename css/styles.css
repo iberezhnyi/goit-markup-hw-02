@@ -1,0 +1,87 @@
+/* Основной цвет бекграунда - #E5E5E5 */
+/* Дополнительный цвет бекграунда - #F5F4FA */
+/* Цвет бекграунда хедера - #FFFFFF */
+/* Цвет бекграунда футера - #2F303A */
+
+/* Цвет основного текста - #757575; */
+/* Цвет текста тайтлов - #212121; */
+/* Дополнительный цвет текста - #FFFFFF; */
+/* Акцент цвет текста - #2196F3; */
+/* Цвет текста в футере № тел., e-mail - rgba(255, 255, 255, 0.6); */
+
+:root {
+    --primary-bg-color: #E5E5E5;
+    
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --secondary-text-color: #FFFFFF;
+    --accent-color: #2196F3;
+    --footer-text-color: rgba(255, 255, 255, 0.6);
+}
+
+.page {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+.logo {
+    color: var(--accent-color);
+}
+
+.link {
+    color: var(--title-text-color);
+}
+
+.contacts {
+    color: var(--primary-text-color);
+}
+
+/* .list {
+    list-style: none;
+} */
+
+/* Hero section */
+.hero-title {
+    color: var(--secondary-text-color);
+}
+
+/* Site-nav */
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contacts:hover,
+.contacts:focus {
+    color: var(--accent-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+/* section */
+.section-title {
+    color: var(--title-text-color);
+}
+
+/* Benefits */
+.benefits .title {
+    color: var(--title-text-color);
+}
+
+/* Team */
+.team .title {
+    color: var(--title-text-color);
+}
+
+/* Button */
+.button {
+    background-color: var(--accent-color);
+    color: var(--secondary-text-color);
+}
+
+.address {
+    color: var(--secondary-text-color);
+}
+
+.contacts-footer {
+    color: var(--footer-text-color);
+}
