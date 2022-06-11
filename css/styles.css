@@ -1,7 +1,7 @@
-/* Основной цвет бекграунда - #E5E5E5 */
-/* Дополнительный цвет бекграунда - #F5F4FA */
-/* Цвет бекграунда хедера - #FFFFFF */
-/* Цвет бекграунда футера - #2F303A */
+/* Основной цвет бекграунда - #E5E5E5; */
+/* Дополнительный цвет бекграунда - #F5F4FA; */
+/* Цвет бекграунда хедера - #FFFFFF; */
+/* Цвет бекграунда героя, футера - #2F303A; */
 
 /* Цвет основного текста - #757575; */
 /* Цвет текста тайтлов - #212121; */
@@ -11,12 +11,16 @@
 
 :root {
     --primary-bg-color: #E5E5E5;
+    --secondary-bg-color: #F5F4FA;
+    --header-bg-color: #FFFFFF;
+    --hero-footer-bg-color: #2F303A;
     
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --secondary-text-color: #FFFFFF;
     --accent-color: #2196F3;
     --footer-text-color: rgba(255, 255, 255, 0.6);
+    --logo-studio-text-color: #000000;
 }
 
 .page {
@@ -24,24 +28,33 @@
     color: var(--primary-text-color);
 }
 
+/* Header, footer */
+.header {
+    background-color: var(--header-bg-color);
+}
+
 .logo {
     color: var(--accent-color);
 }
 
-.link {
-    color: var(--title-text-color);
+.header .logo-studio {
+    color: var(--logo-studio-text-color);
 }
 
-.contacts {
+.footer .logo-studio {
+    color: var(--header-bg-color);
+}
+
+.header .contacts {
     color: var(--primary-text-color);
 }
 
-/* .list {
-    list-style: none;
-} */
+/* Footer (color при ховере перезапись) */
+.footer .contacts {
+    color: var(--footer-text-color);
+}
 
-/* Hero section */
-.hero-title {
+.address.contacts {
     color: var(--secondary-text-color);
 }
 
@@ -53,6 +66,10 @@
     color: var(--accent-color);
 }
 
+.link {
+    color: var(--title-text-color);
+}
+
 .site-nav .link.current {
     color: var(--accent-color);
 }
@@ -62,14 +79,14 @@
     color: var(--title-text-color);
 }
 
-/* Benefits */
-.benefits .title {
-    color: var(--title-text-color);
+/* Hero section */
+.hero-title {
+    color: var(--secondary-text-color);
 }
 
-/* Team */
-.team .title {
-    color: var(--title-text-color);
+.hero,
+.footer {
+    background-color: var(--hero-footer-bg-color);
 }
 
 /* Button */
@@ -78,10 +95,37 @@
     color: var(--secondary-text-color);
 }
 
-.address {
-    color: var(--secondary-text-color);
+/* Benefits */
+.benefits .title {
+    color: var(--title-text-color);
 }
 
-.contacts-footer {
-    color: var(--footer-text-color);
+/* Team */
+.team {
+    background-color: var(--secondary-bg-color);
 }
+
+.team-list .title {
+    color: var(--title-text-color);
+}
+
+                                    /* Portfolio */
+
+.portfolio-list .title {
+    color: var(--title-text-color);
+}
+
+.portfolio-list .text {
+    color: var(--primary-text-color)
+}
+
+.portfolio-button {
+    background-color: var(--secondary-bg-color);
+    color: var(--title-text-color);
+}
+
+
+
+/* .list {
+    list-style: none;
+} */
