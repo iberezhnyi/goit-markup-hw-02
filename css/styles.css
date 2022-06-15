@@ -147,8 +147,10 @@
     background-color: var(--accent-color);
     color: var(--primary-white-color);
     font-family: inherit;
+    font-weight: 700;
     font-size: 30px;
-    line-height: 1.9;
+    line-height: 1.88;
+    text-align: center;
     cursor: pointer;
 }
 
