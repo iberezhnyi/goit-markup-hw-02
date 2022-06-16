@@ -8,6 +8,7 @@
 /* Акцент цвет текста - #2196F3; */
 /* Цвет текста в футере № тел., e-mail - rgba(255, 255, 255, 0.6); */
 /* Лого студио текст цвет - #000000; */
+/* Цвет ховера кнопки - #188CE8; */
 
 :root {
     --primary-white-color: #FFFFFF;
@@ -19,6 +20,7 @@
     --accent-color: #2196F3;
     --footer-text-color: rgba(255, 255, 255, 0.6);
     --logo-studio-text-color: #000000;
+    --button-hover-color: #188CE8;
 }
 
 .page {
@@ -156,6 +158,11 @@
     cursor: pointer;
 }
 
+.button:hover,
+.button:focus {
+    background-color: var(--button-hover-color)
+}
+
 /* Benefits */
 .title {
     color: var(--title-text-color);
@@ -213,4 +220,8 @@
 .active-button {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
+}
+
+.employee {
+    background-color: var(--primary-white-color);
 }
