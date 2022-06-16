@@ -70,6 +70,7 @@
     font-weight: 500;
     line-height: 1.14;
     text-decoration: none;
+    letter-spacing: 0.02em;
 }
 
 /* Footer (color при ховере перезапись) */
@@ -106,6 +107,7 @@
     font-weight: 500;
     line-height: 1.14;
     text-decoration: none;
+    letter-spacing: 0.02em;
 }
 
 /* section */
@@ -186,6 +188,7 @@
 .portfolio-list .title {
     font-size: 18px;
     line-height: 2;
+    letter-spacing: 0.06em;
 }
 
 .portfolio-list .text {
